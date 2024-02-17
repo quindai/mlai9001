@@ -81,6 +81,39 @@ Siga os passos a seguir para replicar esse resultado e enviar um trabalho de tre
 
 ## Implantando o modelo em um ponto de extremidade
 
+Dados em ponto de extremidade que pode ser consumida temporariamente na URI REST http://c7226a4b-34e9-464b-99ed-606cd74bd866.eastus.azurecontainer.io/score
+```json
+{
+  "Inputs": {
+    "data": [
+      {
+        "day": 22,
+        "mnth": 1,
+        "year": 2012,
+        "season": 1,
+        "holiday": 0,
+        "weekday": 0,
+        "workingday": 0,
+        "weathersit": 2,
+        "temp": 0.163,
+        "atemp": 0.162,
+        "hum": 0.796,
+        "windspeed": 0.2
+      }
+    ]
+  },
+  "GlobalParameters": 0.0
+}
+```
+
+Resultado
+```json
+{
+  "Results": [
+    261.21536716527214
+  ]
+}
+```
 
 Links Importantes:
 * https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/02-content-safety.html

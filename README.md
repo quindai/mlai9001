@@ -5,6 +5,44 @@
 | ----------------------------------- | ----------------------------------- |
 | <img src="utils/azure1.png" alt="Tutorial Pages" width="250vw"/> | ![Best Model](utils/azure2.jpeg) |
 
+## Implantando o modelo em um ponto de extremidade
+
+Dados em ponto de extremidade via REST que pode ser consumida temporariamente na URI REST http://c7226a4b-34e9-464b-99ed-606cd74bd866.eastus.azurecontainer.io/score
+```json
+{
+  "Inputs": {
+    "data": [
+      {
+        "day": 22,
+        "mnth": 1,
+        "year": 2012,
+        "season": 1,
+        "holiday": 0,
+        "weekday": 0,
+        "workingday": 0,
+        "weathersit": 2,
+        "temp": 0.163,
+        "atemp": 0.162,
+        "hum": 0.796,
+        "windspeed": 0.2
+      }
+    ]
+  },
+  "GlobalParameters": 0.0
+}
+```
+
+Resultado
+```json
+{
+  "Results": [
+    261.21536716527214
+  ]
+}
+```
+
+Para implantar esse modelo, basta seguir os passos abaixo:
+
 ## Melhor modelo encontrado pelo AutoML
 Observe que as métricas do melhor modelo `maroon_line_k4hh47vg` algoritmo `MaxAbsScaler, LightGBM`, estão descritas abaixo e print da tela em seguida:
 ```
@@ -79,43 +117,16 @@ Siga os passos a seguir para replicar esse resultado e enviar um trabalho de tre
 | ----------------------------------- |
 | <img src="utils/azure11.jpeg" alt="RMSE"/> |
 
-## Implantando o modelo em um ponto de extremidade
 
-Dados em ponto de extremidade que pode ser consumida temporariamente na URI REST http://c7226a4b-34e9-464b-99ed-606cd74bd866.eastus.azurecontainer.io/score
-```json
-{
-  "Inputs": {
-    "data": [
-      {
-        "day": 22,
-        "mnth": 1,
-        "year": 2012,
-        "season": 1,
-        "holiday": 0,
-        "weekday": 0,
-        "workingday": 0,
-        "weathersit": 2,
-        "temp": 0.163,
-        "atemp": 0.162,
-        "hum": 0.796,
-        "windspeed": 0.2
-      }
-    ]
-  },
-  "GlobalParameters": 0.0
-}
-```
 
-Resultado
-```json
-{
-  "Results": [
-    261.21536716527214
-  ]
-}
-```
+## Limpeza
+Se você não quiser correr o risco de receber cobranças indesejadas, apague qualquer grupo de recursos após essa atividade, pois, já não são mais necessários.
 
-Links Importantes:
+Para isso, abra o portal da Azure https://portal.azure.com e selecione na opção grupo de recursos o grupo que contém os recursos que você criou.
+
+Clica no recurso e selecione a opção Delete e depois confirme. O recurso será apagado.
+
+## Links Importantes:
 * https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/02-content-safety.html
 * https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html
 * https://learn.microsoft.com/pt-br/azure/machine-learning/how-to-use-automated-ml-for-ml-models?view=azureml-api-2

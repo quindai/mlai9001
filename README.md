@@ -1,7 +1,7 @@
 # Modelo de Previsão com Azure Machine Learning
 
-- [Parte 1 - Resultados](#parte-1-resultados)
-- [Parte 2 - Passo a Passo - Replicar os Resultados](#passo-a-passo-replicar-os-resultados)
+- [Parte 1 - Resultados](#parte-1---resultados)
+- [Parte 2 - Passo a Passo - Replicar os Resultados](#parte-2---passo-a-passo---replicar-os-resultados)
 
 ## Parte 1 - Resultados
 ### Tutorial Pages 

@@ -1,6 +1,10 @@
 # Modelo de Previsão com Azure Machine Learning
 
-## Tutorial Pages 
+[Parte 1 - Resultados](#parte-1-resultados)
+[Parte 2 - Faça você mesmo para replicar os Resultados][]
+
+## Parte 1 - Resultados
+### Tutorial Pages 
 | Tutorial Pages                            | Best Model                            | 
 | ----------------------------------- | ----------------------------------- |
 | <img src="utils/azure1.png" alt="Tutorial Pages" width="250vw"/> | ![Best Model](utils/azure2.jpeg) |
@@ -75,6 +79,7 @@ Correlação de Spearman
 | ----------------------------------- |
 | <img src="utils/azure3.jpeg" alt="Print das Métricas do melhor modelo"/> |
 
+## Parte 2 - Faça você mesmo para replicar os Resultados
 ### Considerações sobre o RMSE - Erro Quadrático Médio Normalizado
 Observe que dentre os 3 algoritmos, o que apresenta melhor RMSE é o `VotingEnsemble` com *92,71%* de RMSE.
 Sendo um forte candidato para implantação num ponto de extremidade, como faremos a seguir.

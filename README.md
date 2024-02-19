@@ -10,6 +10,21 @@
 | <img src="utils/azure1.png" alt="Tutorial Pages" width="250vw"/> | ![Best Model](utils/azure2.jpeg) |
 
 ## Implantando o modelo em um ponto de extremidade
+Para implantar um modelo no Azure Machine Learning você precisará disponibilizar o modelo via algum serviço de consumo, descrito como **Ponto de Extremidade** na plataforma.
+
+### Pontos de Extremidade online
+Os pontos de extremidade online podem usar os seguintes destinos de computação:
+
+- Pontos de extremidade online gerenciados
+- Serviço de Kubernetes do Azure
+- Ambiente de desenvolvimento local
+
+Para implantar o modelo como um serviço Web, devem ser fornecidos os seguintes itens:
+
+- O modelo ou ensemble de modelos.
+- Dependências necessárias para usar o modelo. Por exemplo, um script que aceita solicitações e invoca o modelo e dependências de conda.
+- Configuração de implantação que descreve como e onde implantar o modelo.
+Para obter mais informações, consulte [Implantar pontos de extremidade online](https://learn.microsoft.com/pt-br/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2).
 
 Dados em ponto de extremidade via REST que pode ser consumida temporariamente na URI REST http://c7226a4b-34e9-464b-99ed-606cd74bd866.eastus.azurecontainer.io/score
 ```json

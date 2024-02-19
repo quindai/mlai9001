@@ -1,5 +1,7 @@
 # Modelo de Previsão com Azure Machine Learning
 
+review repo pics 11 to 18
+
 - [Parte 1 - Resultados](#parte-1---resultados)
 - [Parte 2 - Passo a Passo - Replicar os Resultados](#parte-2---passo-a-passo---replicar-os-resultados)
 

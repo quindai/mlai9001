@@ -26,6 +26,13 @@ Para implantar o modelo como um serviço Web, devem ser fornecidos os seguintes 
 - Configuração de implantação que descreve como e onde implantar o modelo.
 Para obter mais informações, consulte [Implantar pontos de extremidade online](https://learn.microsoft.com/pt-br/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2).
 
+Ao implantar em um ponto de extremidade online, é possível usar a distribuição controlada para habilitar os seguintes cenários:
+
+- Criar várias versões de um ponto de extremidade para uma implantação
+- Executar testes A/B roteando o tráfego para implantações diferentes do ponto de extremidade.
+- Alternar entre as implantações do ponto de extremidade atualizando a porcentagem de tráfego na configuração do ponto de extremidade.
+Para obter mais informações, consulte [Distribuição controlada de modelos de machine learning](https://learn.microsoft.com/pt-br/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2).
+
 Dados em ponto de extremidade via REST que pode ser consumida temporariamente na URI REST http://c7226a4b-34e9-464b-99ed-606cd74bd866.eastus.azurecontainer.io/score
 ```json
 {
